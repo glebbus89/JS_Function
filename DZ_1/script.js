@@ -27,19 +27,19 @@
 // console.log(targetElement);
 
 
-function findElementByClass(root, className) {
-    if (root.classList.contains(className)) {
-    return root;
-    }
+// function findElementByClass(root, className) {
+//     if (root.classList.contains(className)) {
+//     return root;
+//     }
 
-    for (let child of root.children) {
-    const found = findElementByClass(child, className);
-        if (found) {
-        return found;
-        }
-    }
-}
+//     for (let child of root.children) {
+//     const found = findElementByClass(child, className);
+//         if (found) {
+//         return found;
+//         }
+//     }
+// }
 
-const rootElement = document.querySelector('section');
-const targetElement = findElementByClass(rootElement, 'my-class');
-console.log(targetElement);
+// const rootElement = document.querySelector('section');
+// const targetElement = findElementByClass(rootElement, 'my-class');
+// console.log(targetElement);
